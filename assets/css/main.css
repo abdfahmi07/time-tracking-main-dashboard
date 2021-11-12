@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  /* Primary */
+  --primary-blue-color: hsl(246, 80%, 60%);
+  --light-red--work: hsl(15, 100%, 70%);
+  --soft-blue--play: hsl(195, 74%, 62%);
+  --light-red--study: hsl(348, 100%, 68%);
+  --lime-green--exercise: hsl(145, 58%, 55%);
+  --violet--social: hsl(264, 64%, 52%);
+  --soft-orange--self-care: hsl(43, 84%, 65%);
+
+  /* Neutral */
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--very-dark-blue);
+  color: white;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 54rem;
+  margin: 140px auto;
+}
+
+.profile-card,
+.profile {
+  border-radius: 12px;
+}
+
+.profile-card {
+  background: var(--dark-blue);
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-blue-color);
+  padding: 25px;
+}
+
+.profile .image {
+  width: 64px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.profile .info {
+  margin: 30px 0px 30px;
+  width: 55%;
+}
+
+.profile .desc {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.profile .name {
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+.time-list {
+  list-style: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 25px;
+  color: var(--desaturated-blue);
+}
+
+.time-list li:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.time-list li {
+  cursor: pointer;
+}
+
+.time-list li:hover {
+  color: white;
+}
+
+.time-tracking-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.time-tracking-section .time-tracking-card {
+  width: 200px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 132px -7px;
+  background-size: 55px;
+  padding-top: 35px;
+  border-radius: 12px;
+  /* overflow: hidden; */
+}
+
+.work {
+  background-color: var(--light-red--work);
+  background-image: url(../images/icon-work.svg);
+}
+
+.play {
+  background-color: var(--soft-blue--play);
+  background-image: url(../images/icon-play.svg);
+}
+
+.study {
+  background-color: var(--light-red--study);
+  background-image: url(../images/icon-study.svg);
+}
+
+.exercise {
+  background-color: var(--lime-green--exercise);
+  background-image: url(../images/icon-exercise.svg);
+}
+
+.social {
+  background-color: var(--violet--social);
+  background-image: url(../images/icon-social.svg);
+}
+
+.self-care {
+  background-color: var(--soft-orange--self-care);
+  background-image: url(../images/icon-self-care.svg);
+}
+
+.time-tracking-detail {
+  background-color: var(--dark-blue);
+  border-radius: 9px;
+  height: 100%;
+  padding: 20px 23px;
+  cursor: pointer;
+}
+
+.time-tracking-detail:hover {
+  background-color: hsl(235, 46%, 30%);
+}
+
+.card-header {
+  font-size: 11px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header h3 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.bullet-menu span {
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  display: inline-block;
+  margin-right: 2px;
+  border-radius: 50%;
+}
+
+.bullet-menu {
+  opacity: 0.6;
+}
+
+.bullet-menu:hover {
+  opacity: 1;
+}
+
+.card-body h2.total-hours-today {
+  font-size: 38px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.card-body p.total-hours-last-week {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.active {
+  color: white;
+}
