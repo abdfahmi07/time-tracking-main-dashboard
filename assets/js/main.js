@@ -23,7 +23,7 @@ listMenu.forEach((list) => {
 });
 
 const getTimeTrackingData = () => {
-  return fetch("../../data.json")
+  return fetch(`${__dirname}/data.json`)
     .then((res) => {
       return res.json();
     })
