@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+  .main-content {
+    width: 91vw;
+    grid-template-columns: auto;
+    margin-top: 100px;
+  }
+
+  .profile {
+    align-items: center;
+    flex-direction: row;
+    height: 140px;
+  }
+
+  .profile .image {
+    height: 64px;
+    margin-right: 20px;
+  }
+
+  .time-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 20px 35px;
+  }
+
+  .time-list li:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .time-tracking-section {
+    grid-template-columns: auto;
+  }
+
+  .time-tracking-section .time-tracking-card {
+    width: 100%;
+    background-position: 16rem -7px;
+  }
+
+  .time-tracking-detail .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-body p.total-hours-last-week {
+    font-size: 0.75rem;
+  }
+}
